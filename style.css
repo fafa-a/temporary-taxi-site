@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  font-family: arial, sans-serif;
+}
+img {
+  width: 50vw;
+  height: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+span {
+  display: flex;
+  align-items: center;
+}
+body > main > p > span:nth-child(2) {
+  margin-top: 20px;
+}
+
+span .icon {
+  line-height: 20px;
+}
+.icon {
+  width: 20px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 800px) {
+  body {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  figure {
+    margin: 20px auto;
+  }
+  img {
+    width: 70vw;
+  }
+}
